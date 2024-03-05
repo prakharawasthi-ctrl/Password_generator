@@ -4,10 +4,33 @@ function App() {
   const [numberAllowed, setNumberAllowed] = useState(false);
   const [charAllowed, setCharAllowed] = useState(false);
   const [password, setPassword] = useState("");
-  // use state is a hook in which w e give input of a initial value a a method is also given there 
-  // a variable is also present there and value is initialized to that variable 
+  // use state :-
 
-  // useRef hook
+  // is a hook in which w e give input of a initial value a a method is also given there
+  // a variable is also present there and value is initialized to that variable
+
+  //useCallback:-
+
+  // it is a hook which is used to cache dependencies and it allow to save space it is similar to dp
+
+  // useEffect:-
+
+  // The useEffect Hook allows you to perform side effects in your components.
+  // Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+  // useEffect accepts two arguments. The second argument is optional.
+  // useEffect(<function>, <dependency>)
+
+  
+
+  // useRef:-
+
+  // The useRef Hook allows you to persist values between renders.
+  // It can be used to store a mutable value that does not cause a re-render when updated.
+  // It can be used to access a DOM element directly.
+
+  // https://www.youtube.com/watch?v=t2ypzz6gJm0&ab_channel=WebDevSimplified
+
+
   const passwordRef = useRef(null);
 
   const passwordGenerator = useCallback(() => {
